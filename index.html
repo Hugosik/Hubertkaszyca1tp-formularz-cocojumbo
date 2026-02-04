@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+    <style>
+        .container {
+            border-radius: 5px;
+            background-color: white;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        input[type=text], input[type=email], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        input[type=text]:focus, input[type=email]:focus, select:focus, textarea:focus {
+            border: 1px solid #555;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form>
+        <label for="name">Imię i nazwisko</label>
+        <input type="text" id="name" name="name" placeholder="Twoje imię..">
+
+        <label for="email">E-mail fana</label>
+        <input type="email" id="email" name="email" placeholder="Twój e-mail..">
+
+        <label for="track">Zespołu Coco Jumbo</label>
+        <select id="track" name="track">
+            <option value="1">Wybuchowa</option>
+            <option value="2">Dziewczyno nie zmieniaj się</option>
+            <option value="3">Plastikowa Biedronka</option>
+            <option value="4">Dziewczyna Blondyna</option>
+            <option value="5">Życie Jest Piękne</option>
+            <option value="6">Inny hit</option>
+        </select>
+        
+
+        <label for="msg">Wiadomość do zespołu</label>
+        <textarea id="msg" name="msg" placeholder="Napisz coś o Coco Jumbo.."></textarea>
+
+        <input type="submit" value="Wyślij do Zespołu">
+    </form>
+</div>
+
+</body>
+</html>
